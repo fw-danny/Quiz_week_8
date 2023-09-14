@@ -6,7 +6,7 @@ conn = sqlite3.connect('climate.db')
 cursor = conn.cursor()
 
 # Execute a query to fetch data
-cursor.execute("SELECT Year, CO2, Temperature FROM climate_data")
+cursor.execute("SELECT Year, CO2, Temperature FROM ClimateData")
 data = cursor.fetchall()
 
 # Separate the data into lists
